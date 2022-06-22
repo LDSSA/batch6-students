@@ -52,27 +52,27 @@ Because of the differences in command line syntax between Windows vs Mac OS/Linu
 sudo apt update && sudo apt upgrade && sudo apt install git
 ```
 
-**Step 3:** Open a terminal (remember **[this](guides/Windows_Subsystem_for_Linux_Installation_Guide_for_Windows_10.md#Opening-the-WSL-terminal)**!!) and check if you already have `python3.7` by usind the command below. If your version is `Python 3.7.x` (`x` = any number), you can skip to step 4, otherwise continue with step 3.1 and 3.2
+**Step 3:** Open a terminal (remember **[this](guides/Windows_Subsystem_for_Linux_Installation_Guide_for_Windows_10.md#Opening-the-WSL-terminal)**!!) and check if you already have `python3.8` by usind the command below. If your version is `Python 3.8.x` (`x` = any number), you can skip to step 4, otherwise continue with step 3.1 and 3.2
 
 ```bash
-python3.7 --version
+python3.8 --version
 ```
-**Step 3.1:** Run the following commands to setup _Python 3.7_ (if you get an error with this command, check [this](#6-When-setting-up-python-3.7-i-get-an-error)
+**Step 3.1:** Run the following commands to setup _Python 3.8_ (if you get an error with this command, check [this](#6-When-setting-up-python-3.7-i-get-an-error)
 ):
 
 ```bash
 sudo add-apt-repository ppa:deadsnakes/ppa
 ```
 
-**Step 3.2:** Run the following commands to install _Python 3.7_
+**Step 3.2:** Run the following commands to install _Python 3.8_
 
 ```bash
-sudo apt update && sudo apt install python3.7 -y
+sudo apt update && sudo apt install python3.8 -y
 ```
 
 **Step 4** Run the following command to get `pip` and `venv`:
 ```bash
-sudo apt update && sudo apt upgrade && sudo apt install python3-pip python3.7-venv -y
+sudo apt update && sudo apt upgrade && sudo apt install python3-pip python3.8-venv -y
 ```
 >**Why do we install these?**
 >
@@ -179,13 +179,13 @@ echo 'alias ibrew="arch -x86_64 /usr/local/bin/brew"' >> ~/.zshrc
 source ~/.zshrc
 ```
 
-**Step 5:** Install python 3.7 with `ibrew`
+**Step 5:** Install Python 3.8 with `ibrew`
 
 ```bash
 ibrew install python@3.7
 ```
 
-**Step 6:** Add python 3.7 to $PATH
+**Step 6:** Add Python 3.8 to $PATH
 
 ```bash
 export PATH="/usr/local/opt/python@3.7/bin:$PATH" >> ~/.zshrc
@@ -203,28 +203,28 @@ source ~/.zshrc
 So you're using Ubuntu, hun? Well, kudos to you. You just need to install a couple of packages.
 
 
-**Step 1:** Open a terminal and check what version of Python you have by using the command below. If your version is `Python 3.7.x` (`x` = any number), you can skip to step 2, otherwise continue with step 1.1 and 1.2
+**Step 1:** Open a terminal and check what version of Python you have by using the command below. If your version is `Python 3.8.x` (`x` = any number), you can skip to step 2, otherwise continue with step 1.1 and 1.2
 
 ```bash
-python3.7 --version
+python3.8 --version
 ```
 
-**Step 1.1:** Run the following commands to setup _Python 3.7_ (if you get an error with this command, check [this](#6-When-setting-up-python-3.7-i-get-an-error)
+**Step 1.1:** Run the following commands to setup _Python 3.8_ (if you get an error with this command, check [this](#6-When-setting-up-python-3.7-i-get-an-error)
 ):
 
 ```bash
 sudo add-apt-repository ppa:deadsnakes/ppa
 ```
 
-**Step 1.2:** Run the following commands to install _Python 3.7_
+**Step 1.2:** Run the following commands to install _Python 3.8_
 
 ```bash
-sudo apt update && sudo apt install python3.7 -y
+sudo apt update && sudo apt install python3.8 -y
 ```
 
 **Step 2** Run the following command to get `pip` and `venv`:
 ```bash
-sudo apt update && sudo apt upgrade && sudo apt install python3-pip python3.7-venv -y
+sudo apt update && sudo apt upgrade && sudo apt install python3-pip python3.8-venv -y
 ```
 
 >**Why do we install these?**
@@ -247,13 +247,13 @@ To install and update packages, we'll be using _pip_ which is the reference Pyth
 **Step 1** Start by installing ensuring pip, setuptools, and wheel are up to date:
 
 ```bash
-python3.7 -m pip install --user --upgrade pip setuptools wheel
+python3.8 -m pip install --user --upgrade pip setuptools wheel
 ```
 
 **Step 2** Create a virtual environment with the name `slu00`
 
 ```bash
-python3.7 -m venv ~/.virtualenvs/slu00
+python3.8 -m venv ~/.virtualenvs/slu00
 ```
 
 **Step 3** Activate the environment
@@ -306,9 +306,9 @@ In this academy that **is a requirement** as it is how you will make your work a
 #### Creating the Workspace
 
 1. Log into _GitHub_
-1. Create a new **private** _GitHub_ repository called *batch5-workspace*, see
+1. Create a new **private** _GitHub_ repository called *batch6-workspace*, see
 [Creating a new repository](https://help.github.com/en/articles/creating-a-new-repository).
-**IMPORTANT** The repo **MUST** be named *batch5-workspace*!
+**IMPORTANT** The repo **MUST** be named *batch6-workspace*!
 If you name it anything else, you will be unable to submit any of your work!
     1. You need to explicitly select **Private** - This is your work and nobody else's.
     You will be graded based upon the merits of what you are able to do here
@@ -348,7 +348,7 @@ _Portal_
 #### Cloning the Workspace
 
 1. Open a Terminal or Git Bash, the next steps are on this terminal
-1. Clone your `<username>/batch5-workspace` repository
+1. Clone your `<username>/batch6-workspace` repository
 
     > If you're not sure where to clone the repository in, you can create a `~/projects` folder, and clone it there
 
@@ -356,45 +356,45 @@ _Portal_
 If you have your [**ssh keys set up**](#Setup-Git-and-GitHub) as instructed:
 
 ```bash
-git clone git@github.com:<username>/batch5-workspace.git
+git clone git@github.com:<username>/batch6-workspace.git
 ```
 
 else
 
 ```bash
-git clone https://github.com/<username>/batch5-workspace.git
+git clone https://github.com/<username>/batch6-workspace.git
 ```
 
 ### Get the Learning Material
 
-You will be cloning the [batch5-students](https://github.com/LDSSA/batch5-students)
+You will be cloning the [batch6-students](https://github.com/LDSSA/batch6-students)
 repository.
 All of the learning material you need will be made available on this repo
 as the academy progresses.
 
 1. Open a Terminal or Git Bash, the next steps are on this terminal
 1. Clone the students repository
-[batch5-students](https://github.com/LDSSA/batch5-students)
+[batch6-students](https://github.com/LDSSA/batch6-students)
 
 ```bash
-git clone https://github.com/LDSSA/batch5-students.git
+git clone https://github.com/LDSSA/batch6-students.git
 ```
 
 Or if you have your ssh keys set up:
 
 ```bash
-git clone git@github.com:LDSSA/batch5-students.git
+git clone git@github.com:LDSSA/batch6-students.git
 ```
 
 ### Running and Submitting a Learning Unit
 
-In the `batch5-students` repository that you just cloned there is a sample
+In the `batch6-students` repository that you just cloned there is a sample
 learning unit.
 It's used to give instructors guidelines to produce the learning units.
 We are also using it to ensure that you are able to run and submit a learning
 unit.
 
-So go ahead and copy the sample directory `sample/SLU00 - LU Tutorial` from the `batch5-students` repository to your repository (named `batch5-workspace`).
+So go ahead and copy the sample directory `sample/SLU00 - LU Tutorial` from the `batch6-students` repository to your repository (named `batch6-workspace`).
 ![Sample learning unit](assets/sample_learning_unit.png "Sample learning unit")
 
 The grader only requires you to have the contents in a directory starting with
@@ -432,11 +432,11 @@ So let's start the Jupyter Notebook app:
     source ~/.virtualenvs/slu00/bin/activate
     ```
 
-1. Enter the Learning unit directory in your workspace directory (`batch5-workspace`).
-    >Note: It is **VERY IMPORTANT** that you **ALWAYS** work on the files on your `batch5-workspace` repository, and **NEVER** work on files that are in your `batch5-students` repository!
+1. Enter the Learning unit directory in your workspace directory (`batch6-workspace`).
+    >Note: It is **VERY IMPORTANT** that you **ALWAYS** work on the files on your `batch6-workspace` repository, and **NEVER** work on files that are in your `batch6-students` repository!
 
     ```bash
-    cd ~/projects/batch5-workspace/sample/"SLU00 - LU Tutorial"
+    cd ~/projects/batch6-workspace/sample/"SLU00 - LU Tutorial"
     ```
 
 1. Installing the necessary packages
@@ -505,7 +505,7 @@ for all LUs throughout the academy.
 
 Now you have worked on the sample learning unit and you have some uncommitted
 changes.
-It's time to commit the changes, which just means adding them to your `batch5-workspace`
+It's time to commit the changes, which just means adding them to your `batch6-workspace`
 repository history, and pushing this history to you remote on _GitHub_.
 
 * Using the terminal commit and push the changes
@@ -532,7 +532,7 @@ You will need to follow this workflow whenever new learning materials are releas
 
 Learning units will be announced in the academy's _#announcements_ channel.
 At this point they are available in the
-[batch5-students](https://github.com/LDSSA/batch5-students)
+[batch6-students](https://github.com/LDSSA/batch6-students)
 repository.
 A new Learning Unit is released every Monday, and its
 solutions are then released the next Monday.
@@ -546,24 +546,24 @@ Here's a quick recap:
     source ~/.virtualenvs/slu00/bin/activate
     ```
 
-1. Once a new Learning Unit is available, pull the changes from the [batch5-students](https://github.com/LDSSA/batch5-students) repo:
-    * enter the `~/projects/batch5-students/` using the `cd` command, then use the `git pull` command:
+1. Once a new Learning Unit is available, pull the changes from the [batch6-students](https://github.com/LDSSA/batch6-students) repo:
+    * enter the `~/projects/batch6-students/` using the `cd` command, then use the `git pull` command:
 
     ```bash
-    cd ~/projects/batch5-students/
+    cd ~/projects/batch6-students/
     git pull
     ```
 
-1. Copy the Learning Unit to your `batch5-workspace` repo
+1. Copy the Learning Unit to your `batch6-workspace` repo
 
     ```bash
-    cp -r ~/projects/batch5-students/"<specialization ID> - <specialization name>"/"<learning unit ID> - <learnin unit name>" ~/projects/batch5-workspace/"<specialization ID> - <specialization name>"
+    cp -r ~/projects/batch6-students/"<specialization ID> - <specialization name>"/"<learning unit ID> - <learnin unit name>" ~/projects/batch6-workspace/"<specialization ID> - <specialization name>"
     ```
 
     For example, for the `S01 - Bootcamp and Binary Classification` and `SLU01 - Pandas 101`, it would look like this:
 
     ```bash
-    cp -r ~/projects/batch5-students/"S01 - Bootcamp and Binary Classification"/"SLU01 - Pandas 101" ~/projects/batch5-workspace/"S01 - Bootcamp and Binary Classification"
+    cp -r ~/projects/batch6-students/"S01 - Bootcamp and Binary Classification"/"SLU01 - Pandas 101" ~/projects/batch6-workspace/"S01 - Bootcamp and Binary Classification"
     ```
 
 1. Create a new virtual environment for the Learning Unit you'll be working on.
@@ -571,13 +571,13 @@ Here's a quick recap:
     * To do this you will run the following command:
 
     ```bash
-    python3.7 -m venv ~/.virtualenvs/<learning unit ID>
+    python3.8 -m venv ~/.virtualenvs/<learning unit ID>
     ```
 
     * and you would replace the `<learning unit ID>` with the learning unit ID, such that for SLU01, for example, the command would be:
 
     ```bash
-    python3.7 -m venv ~/.virtualenvs/slu01
+    python3.8 -m venv ~/.virtualenvs/slu01
     ```
 
 1. Activate your virtual environment
@@ -589,19 +589,19 @@ Here's a quick recap:
 1. Install the python packages from requirements.txt for the specific Learning Unit (you must do this for each Learning Unit, and there are multiple Learning Units in a Specialization)
 
     ```bash
-    pip install -r ~/projects/batch5-workspace/"<specialization ID> - <specialization name>"/"<learning unit ID> - <learnin unit name>"/requirements.txt
+    pip install -r ~/projects/batch6-workspace/"<specialization ID> - <specialization name>"/"<learning unit ID> - <learnin unit name>"/requirements.txt
     ```
 
     For example, for the `S01 - Bootcamp and Binary Classification` and `SLU01 - Pandas 101`, it would look like this:
 
     ```bash
-    pip install -r ~/projects/batch5-workspace/"S01 - Bootcamp and Binary Classification"/requirements.txt
+    pip install -r ~/projects/batch6-workspace/"S01 - Bootcamp and Binary Classification"/requirements.txt
     ```
 
-1. Change to the `batch5-workspace` dir
+1. Change to the `batch6-workspace` dir
 
     ```bash
-    cd ~/projects/batch5-workspace
+    cd ~/projects/batch6-workspace
     ```
 
 1. Open Jupyter Notebook
@@ -615,7 +615,7 @@ Here's a quick recap:
 1. Then commit the changes and push
 
     ```bash
-    cd ~/projects/batch5-workspace
+    cd ~/projects/batch6-workspace
     git add .
     git commit -m "Worked on SLU01 exercises"
     git push
@@ -687,20 +687,20 @@ you are able to download the exercise notebook with the results of the grader
 by clicking your grade, have a look to figure out what went wrong.
 ![Download notebook](assets/portal_download_notebook.png "Download notebook")
 If none of these steps helped go ahead and open a support ticket for the portal
-[here](https://github.com/LDSSA/batch5-students).
+[here](https://github.com/LDSSA/batch6-students).
 
 Is the _Portal_ down or acting out in some unexpected way?
 Then please open a support ticket for the portal
-[here](https://github.com/LDSSA/batch5-students).
+[here](https://github.com/LDSSA/batch6-students).
 
 ### Troubleshooting
 
 1. [When I open Windows Explorer through Ubuntu it goes to a different folder than in the guide](#When-I-open-Windows-Explorer-through-Ubuntu-it-goes-to-a-different-folder-than-in-the-guide)
 1. [Ubuntu on Windows 10 high CPU usage crashes](#Ubuntu-on-Windows-10-high-CPU-usage-crashes)
-1. [When I pull from the `batch5-students` repository I get an error](#When-I-pull-from-the-batch5-students-repository-I-get-the-error)
+1. [When I pull from the `batch6-students` repository I get an error](#When-I-pull-from-the-batch6-students-repository-I-get-the-error)
 1. [When I try to open `jupyter notebook` I get an error](#When-I-try-to-open-jupyter-notebook-I-get-the-error)
 1. [When I use the `cp` command the `>` sign appears and the command does not execute](#When-I-use-the-`cp`-command-the->-sign-appears-and-the-command-does-not-execute)
-1. [When setting up python 3.7 I get an error](#When-setting-up-python-3.7-i-get-an-error)
+1. [When setting up Python 3.8 I get an error](#When-setting-up-python-3.7-i-get-an-error)
 1. [Nothing happens when I type my password](#Nothing-happens-when-I-type-my-password)
 1. [I still have a NotImplemented error](#I-still-have-a-NotImplemented-error)
 1. [I get an error when creating the virtual environment](#I-get-an-error-when-creating-the-virtual-environment)
@@ -729,17 +729,17 @@ Please commit your changes or stash them before you merge.
 Aborting
 ```
 
-_git_ is telling us that changes were made by you to the files on the `~/projects/batch5-students` folder, and is not pulling the changes made by the instructors because they would override the changes that you made there. To fix this do the following:
+_git_ is telling us that changes were made by you to the files on the `~/projects/batch6-students` folder, and is not pulling the changes made by the instructors because they would override the changes that you made there. To fix this do the following:
 
-1. make sure that any change you made to the files on `~/projects/batch5-students`  (that you want to not lose) is saved in your `~/projects/batch5-workspace` repository (see `https://github.com/LDSSA/batch5-students#updates-to-learning-units` for how to do this), and if you don't want to keep the changes you made to these files, just continue on to the next step
-2. go to the `~/projects/batch5-students` folder and run:
+1. make sure that any change you made to the files on `~/projects/batch6-students`  (that you want to not lose) is saved in your `~/projects/batch6-workspace` repository (see `https://github.com/LDSSA/batch6-students#updates-to-learning-units` for how to do this), and if you don't want to keep the changes you made to these files, just continue on to the next step
+2. go to the `~/projects/batch6-students` folder and run:
 
     ```bash
-    cd ~/projects/batch5-students
+    cd ~/projects/batch6-students
     git stash
     ```
 
-3. now you can pull from the `batch5-students` repository:
+3. now you can pull from the `batch6-students` repository:
 
     ```bash
     git pull
@@ -761,13 +761,13 @@ source ~/.virtualenvs/slu00/bin/activate
 #### When I use the `cp` command the `>` sign appears and the command does not execute
 
 ```bash
-cp -r ~/projects/batch5-students/"S01 - Bootcamp and Binary Classification"/"SLU01 - Pandas 101" ~/projects/batch5-workspace/"S01 - Bootcamp and Binary Classification"
+cp -r ~/projects/batch6-students/"S01 - Bootcamp and Binary Classification"/"SLU01 - Pandas 101" ~/projects/batch6-workspace/"S01 - Bootcamp and Binary Classification"
 >
 ```
 
 Make sure to use this type of quotes `"` and not these ones `“`.
 
-#### When setting up python 3.7 I get an error
+#### When setting up Python 3.8 I get an error
 
 When I run this command:
 
@@ -803,16 +803,16 @@ The `raise NotImplementedError()` are added to the exercise cell as a placeholde
 
 #### I get an error when creating the virtual environment
 
-I ran `python3.7 -m venv ~/.virtualenvs/slu00`, but got the following error:
+I ran `python3.8 -m venv ~/.virtualenvs/slu00`, but got the following error:
 
 >The virtual environment was not created successfully because ensurepip is not available.
 
 This can happen if either you [skipped the installation of python-pip](#Setup-for-all-Operating-Systems), or the version of the python you're calling doesn't have python pip installed.
 
-As we're using python3.7 for this academy, and if you've followed all the steps in this README correctly, you should be able to create the virtual environment with:
+As we're using python3.8 for this academy, and if you've followed all the steps in this README correctly, you should be able to create the virtual environment with:
 
 ```bash
-python3.7 -m venv ~/.virtualenvs/slu00
+python3.8 -m venv ~/.virtualenvs/slu00
 ```
 
 #### Checksum verification failed
