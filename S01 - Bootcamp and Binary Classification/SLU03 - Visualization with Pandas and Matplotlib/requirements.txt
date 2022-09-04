@@ -1,0 +1,8 @@
+ipython==8.3.0
+matplotlib==3.5.2
+nbgrader==0.7.0
+notebook==6.4.12
+numpy==1.22.4
+pandas==1.4.2
+scikit-learn==1.1.1
+plotchecker==0.2.0
