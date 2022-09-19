@@ -1,0 +1,5 @@
+matplotlib==3.3.4
+nbgrader==0.7.0
+notebook==6.4.6
+pandas==1.4.2
+numpy==1.22.0
