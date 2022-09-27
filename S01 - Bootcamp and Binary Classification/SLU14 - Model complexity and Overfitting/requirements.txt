@@ -1,0 +1,9 @@
+ipython==8.4.0           # base
+imbalanced-learn==0.9.1
+matplotlib==3.5.3
+nbgrader==0.8.0          # base
+notebook==6.4.12         # base
+numpy==1.23.2            # base
+pandas==1.4.4            # base
+scikit-learn==1.1.2      # base
+seaborn==0.11.2
