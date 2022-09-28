@@ -1,0 +1,5 @@
+ipython==8.4.0          # base
+nbgrader==0.7.0         # base
+notebook==6.4.0         # base
+numpy==1.22.0           # base
+pandas==1.4.2           # base
