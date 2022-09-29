@@ -1,0 +1,7 @@
+ipython==7.25.0
+nbgrader==0.7.0
+notebook==6.4.6
+numpy==1.22.0
+pandas==1.4.2
+scikit-learn==0.24.2
+matplotlib==3.4.2
