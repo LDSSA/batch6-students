@@ -1,0 +1,9 @@
+ipython==8.4.0          # base
+matplotlib==3.4.2       # additional - used by many units
+nbgrader==0.7.0         # base
+notebook==6.4.0         # base
+numpy==1.22.0           # base
+pandas==1.4.2           # base
+scikit-learn==0.24.2    # base
+jinja2==3.0
+pydotplus==2.0.2
