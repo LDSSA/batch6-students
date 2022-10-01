@@ -21,6 +21,8 @@
 # Important resources:
 
 [API for the sklearn implementation of logistic regression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html)
+
 [User guide for the sklearn implementation of logistic regression](https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression)
+
 [Standard scaler](http://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html)
 
