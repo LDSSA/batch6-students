@@ -1,0 +1,10 @@
+ipython==7.25.0  
+matplotlib==3.4.2
+nbgrader==0.7.0
+notebook==6.4.0
+numpy==1.22.0
+pandas==1.4.2
+chardet==5.0.0
+lxml==4.9.1
+openpyxl==3.0.10
+xlrd==2.0.1
