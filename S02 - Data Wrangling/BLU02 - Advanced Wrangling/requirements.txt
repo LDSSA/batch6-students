@@ -1,0 +1,11 @@
+jupyter-client==6.1.12
+scikit-learn==1.1.2 # base
+scipy==1.9.3 # additional - used by many units
+seaborn==0.12.1 # additional - used by many units
+category-encoders==2.5.1
+ipython==8.4.0
+matplotlib==3.6.0
+nbgrader==0.7.0
+notebook==6.4.0
+numpy==1.22.0
+pandas==1.4.2
