@@ -1,0 +1,23 @@
+ipython==7.25.0           # base
+nbgrader==0.7.0           # base
+notebook==6.4.0           # base
+jupyter-client==6.1.12    # base
+​
+numpy==1.23.0             # base
+pandas==1.5.1             # base
+scikit-learn==1.1.0       # base
+​
+matplotlib==3.5.2         # additional
+scipy==1.9.3              # additional
+seaborn==0.12.1           # additional
+category-encoders==2.5.1  # additional
+​
+SQLAlchemy==1.4.43        # S02
+requests==2.28.1          # S02
+Pillow==9.3.0             # S02
+beautifulsoup4==4.9.3     # S02
+psycopg2-binary==2.9.5    # S02
+chardet==5.0.0            # S02
+lxml==4.9.1               # S02
+openpyxl==3.0.10          # S02
+xlrd==2.0.1               # S02
