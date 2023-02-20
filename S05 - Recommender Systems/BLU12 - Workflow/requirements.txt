@@ -1,0 +1,14 @@
+ipython==8.4.0
+notebook==6.4.0
+jupyter-client==6.1.12
+nbgrader==0.7.0
+
+numpy==1.24.0
+pandas==1.4.2
+scikit_learn==0.24.2
+matplotlib==3.4.2
+
+#lightFM==1.16
+#scikit-surprise==1.1.3
+ml_metrics==0.1.4
+psutil==5.9.4
